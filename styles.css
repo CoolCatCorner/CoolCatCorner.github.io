@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+* {
+  font-family: "lato";
+  color: #ffffff;
+}
+
+header {
+  padding: 0 5%;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: inherit;
+  margin: 4em 0;
+}
+
+.background-wrapper {
+  background-image: url(https://static.squarespace.com/static/53fc9a5be4b03d16abdbc01e/t/5400dbcbe4b0e0b08ee21c3b/1409342411413/content-image-color-v2.jpg);
+  background-image: url(./dancing1oil.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: absolute;
+  min-width: 100%;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+.background-overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.navigation {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list-item {
+  display: inline-block;
+  padding: 15px;
+}
+
+.navigation-anchor {
+  color: rgba(255,255,255,.6);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.navigation-anchor.is-active,
+.navigation-anchor:hover {
+  color: #ffffff;
+}
+
+.content-container {
+  margin: 50px auto;
+  max-width: 1080px;
+  padding: 0 5%;
+  width: 70%;
+}
+
+.header-large {
+  font-size: 4.5em;
+}
+
+.header-small {
+  font-size: 3em;
+  text-transform: none;
+}
+
+.header-description {
+  text-align: center;
+  font-size: 2em;
+  margin: 15px;
+}
+
+.content-description {
+  text-align: center;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+}
