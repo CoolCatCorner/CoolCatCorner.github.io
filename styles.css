@@ -50,8 +50,6 @@ h1 {
 }
 
 .background-wrapper {
-  background-image: url(https://static.squarespace.com/static/53fc9a5be4b03d16abdbc01e/t/5400dbcbe4b0e0b08ee21c3b/1409342411413/content-image-color-v2.jpg);
-  background-image: url(./dancing1oil.png);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -166,6 +164,7 @@ h1 {
 
 .image-container img {
   border: 5px solid black;
+  max-height: 250px;
 }
 
 .small {
@@ -176,10 +175,37 @@ h1 {
   body {
     font-size: 12px;
   }
+
+  .header {
+    max-width: 492px;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
+  .image-container {
+    display: block;
+  }
+
+  .image-container-description {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
   body {
     font-size: 10px;
+  }
+  .header {
+    text-align: center;
+  }
+  .right {
+    text-align: center;
+  }
+
+  .image-container img {
+    border: 5px solid black;
+    max-height: 188px;
   }
 }
