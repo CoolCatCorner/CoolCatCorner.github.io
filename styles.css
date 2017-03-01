@@ -104,6 +104,11 @@ h1 {
   font-size: 13px;
 }
 
+.navigation-anchor.is-active {
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+
 .navigation-anchor.is-active,
 .navigation-anchor:hover {
   color: #ffffff;
